@@ -47,6 +47,7 @@ input {
     border-radius: 25px;
     padding: 10px;
     color: #333;
+    outline:none;
 }
 
 button {
@@ -56,4 +57,5 @@ button {
     background-color: #888;
     color: white;
     padding: 10px;
+    outline:none;
 }
