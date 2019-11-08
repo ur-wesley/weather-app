@@ -3,7 +3,7 @@ const search = document.querySelector('input')
 const messageOne = document.querySelector('#messageOne')
 const messageTwo = document.querySelector('#messageTwo')
 
-messageOne.textContent = 'Gebe ein Ort ein um das Wetter angezeigt zu bekommen.'
+messageOne.textContent = 'Gib einen Ort ein um das Wetter angezeigt zu bekommen.'
 messageTwo.textContent = ''
 
 weatherForm.addEventListener('submit', (e) => {
