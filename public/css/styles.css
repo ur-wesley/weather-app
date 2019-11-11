@@ -1,55 +1,35 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333;
-    max-width: 650px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 auto;
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
     
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 footer {
-    color: white;
-    background-color: #ddd;
-    margin-top: 16px;
-    padding-right: 30px;
-    text-align: right;
-    border-radius: 20px 20px 0  0;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+#page-content {
+    flex: 1 0 auto;
 }
 
 .main-content {
     flex-grow: 1;
 }
 
-h1 {
-    margin-bottom: 16px;
-    font-size: 60px;
-}
-
-header {
-    margin-top: 16px;
-    margin-bottom: 48px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-header a {
-    color: #888;
-    margin-right: 16px;
-    text-decoration: none;
-}
-
 .portrait {
     width: 250px;
 }
-
-.container {
-    border-radius: 100px;
-    background-color: #ddd;
-    padding: 40px 30px;
-  }
 
 .result {
     padding: 10px 50px;
@@ -62,16 +42,4 @@ input {
     color: #333;
     outline:none;
     width: 350px;
-}
-
-button {
-    cursor: pointer;
-    border: 1px solid #888;
-    border-radius: 25px;
-    background-color: #888;
-    color: white;
-    padding: 10px;
-    outline:none;
-    float: right;
-    width: 150px;
 }
