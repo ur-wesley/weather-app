@@ -4,7 +4,7 @@ const messageOne = document.querySelector('#messageOne')
 const messageTwo = document.querySelector('#messageTwo')
 
 messageOne.textContent = 'Gib einen Ort ein um das Wetter angezeigt zu bekommen.'
-messageTwo.textContent = ''
+messageTwo.textContent = 'Hier könnte ihre Werbung stehen.'
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value
 
     messageOne.textContent = 'Loading...'
-    messageTwo.textContent = ''
+    messageTwo.textContent = 'Hier könnte ihre Werbung stehen.'
 
     fetch('/weather?location=' + location).then((respone) => {
         respone.json().then(({ error, forecast, location } = {}) => {
