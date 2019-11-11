@@ -43,3 +43,14 @@ input {
     outline:none;
     width: 350px;
 }
+ h1 {
+    background: rgb(0,78,147);
+    background: linear-gradient(298deg, rgba(0,78,147,1) 41%, rgba(0,0,0,1) 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ li {
+     padding: 5px 20px;
+     font-size: 25px;
+ }
